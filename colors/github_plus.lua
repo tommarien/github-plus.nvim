@@ -1,1 +1,2 @@
-require('github_plus').load()
+local github_plus = require('github_plus')
+github_plus.load()

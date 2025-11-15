@@ -5,9 +5,6 @@ local M = {}
 M.setup = config.setup
 
 M.load = function()
-    vim.o.termguicolors = true
-    vim.g.colors_name = 'github_plus'
-
     vim.cmd('hi clear')
     if vim.fn.exists('syntax_on') then
         vim.cmd('syntax reset')
@@ -21,6 +18,9 @@ M.load = function()
     if config.opts.terminal_colors then
         require('github_plus.terminal').set_terminal_colors(palette)
     end
+
+    vim.o.termguicolors = true
+    vim.g.colors_name = 'github_plus'
 end
 
 return M
