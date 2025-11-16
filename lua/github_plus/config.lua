@@ -2,9 +2,7 @@
 --- @field opts GithubPlus.Options
 local M = {}
 
----@class GithubPlus.Style
----@field italic? boolean
----@field bold? boolean
+---@alias GithubPlus.Style { italic?: boolean, bold?: boolean }
 
 --- @class GithubPlus.Options
 --- @field terminal_colors boolean

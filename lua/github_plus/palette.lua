@@ -39,7 +39,7 @@
 --- @field diff { add:string, change:string, delete:string, text:string }
 --- @field ui GithubPlus.Palette.UI
 local p = {
-    black  = { base = '#22272e', bright = '#768390' },
+    black  = { base = '#282c33', bright = '#768390' },
     red    = { base = '#f47067', bright = '#ff938a' },
     green  = { base = '#57ab5a', bright = '#8edb8c' },
     yellow = { base = '#daaa3f', bright = '#f2cc60' },
