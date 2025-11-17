@@ -6,6 +6,8 @@ local M = {}
 --- @class GithubPlus.Styles
 --- @field comments? GithubPlus.Style
 --- @field keywords? GithubPlus.Style
+--- @field numbers? GithubPlus.Style
+--- @field operators? GithubPlus.Style
 --- @field strings? GithubPlus.Style
 --- @field types? GithubPlus.Style
 

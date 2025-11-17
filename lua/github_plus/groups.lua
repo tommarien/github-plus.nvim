@@ -6,10 +6,9 @@ local M = {}
 --- @field sp? string
 --- @field bold? boolean
 --- @field link? string
---- @field italic? string
---- @field underline? string
---- @field undercurl? string
-
+--- @field italic? boolean
+--- @field underline? boolean
+--- @field undercurl? boolean
 
 --- @param p GithubPlus.Palette
 --- @param opts GithubPlus.Options
@@ -70,26 +69,26 @@ M.setup = function(p, opts)
         Delimiter                     = { fg = p.fg.base },
         Error                         = { fg = p.diagnostics.error },
         Exception                     = { fg = p.red.base },
-        Float                         = { fg = p.cyan.bright },
+        Float                         = { link = 'Number' },
         Function                      = { fg = p.purple.bright },
         Identifier                    = { fg = p.fg.base },
         Ignore                        = { fg = p.fg.dim },
         Include                       = { fg = p.red.base },
         Keyword                       = vim.tbl_extend('force', opts.styles.keywords or {}, { fg = p.red.base }),
-        Label                         = { fg = p.red.base },
+        Label                         = { link = 'Conditional' },
         Macro                         = { fg = p.red.base },
-        Number                        = { fg = p.cyan.bright },
-        Operator                      = { fg = p.ui.operator },
+        Number                        = vim.tbl_extend('force', opts.styles.numbers or {}, { fg = p.cyan.bright }),
+        Operator                      = vim.tbl_extend('force', opts.styles.operators or {}, { fg = p.ui.operator }),
         PreCondit                     = { fg = p.red.base },
         PreProc                       = { fg = p.red.base },
-        Repeat                        = { fg = p.red.base },
+        Repeat                        = { link = 'Conditional' },
         Special                       = { fg = p.red.base },
         SpecialChar                   = { fg = p.red.base },
         SpecialComment                = { link = 'Comment' },
         Statement                     = { fg = p.red.base },
-        StorageClass                  = { fg = p.red.base },
+        StorageClass                  = { link = 'Type' },
         String                        = vim.tbl_extend('force', opts.styles.strings or {}, { fg = p.green.bright }),
-        Structure                     = { fg = p.purple.bright },
+        Structure                     = { link = 'Type' },
         Tag                           = { fg = p.green.bright },
         Todo                          = { fg = p.purple.base, bold = true },
         Type                          = vim.tbl_extend('force', opts.styles.types or {}, { fg = p.blue.bright }),
@@ -126,7 +125,7 @@ M.setup = function(p, opts)
         ['@field']                    = { fg = p.fg.base },
         ['@property']                 = { fg = p.fg.base },
         ['@constructor']              = { link = 'Function' },
-        ['@conditional']              = { fg = p.red.base },
+        ['@conditional']              = { link = 'Conditional' },
         ['@repeat']                   = { fg = p.red.base },
         ['@label']                    = { fg = p.red.base },
         ['@operator']                 = { link = 'Operator' },
