@@ -2,12 +2,17 @@
 --- @field opts GithubPlus.Options
 local M = {}
 
----@alias GithubPlus.Style { italic?: boolean, bold?: boolean }
+--- @alias GithubPlus.Style { bold?: boolean, italic?: boolean, underline?: boolean }
+--- @class GithubPlus.Styles
+--- @field comments? GithubPlus.Style
+--- @field keywords? GithubPlus.Style
+--- @field strings? GithubPlus.Style
+--- @field types? GithubPlus.Style
 
 --- @class GithubPlus.Options
 --- @field terminal_colors boolean
 --- @field transparent boolean
---- @field styles { comments: GithubPlus.Style, strings: GithubPlus.Style }
+--- @field styles GithubPlus.Styles
 local defaults = {
     terminal_colors = true,
     transparent = false,
@@ -15,7 +20,6 @@ local defaults = {
         comments = {
             italic = true,
         },
-        strings = {}
     }
 }
 
@@ -37,7 +41,7 @@ end
 --- @class GithubPlus.Overrides
 --- @field transparent? boolean Enable transparent background
 --- @field terminal_colors? boolean Apply colors to terminal
---- @field styles? { comments?: GithubPlus.Style, strings?:GithubPlus.Style }
+--- @field styles? GithubPlus.Styles
 --- @param opts? GithubPlus.Overrides
 M.setup = function(opts)
     M.opts = M.deep_extend(M.opts, opts or {})

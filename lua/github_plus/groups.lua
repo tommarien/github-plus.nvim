@@ -6,6 +6,9 @@ local M = {}
 --- @field sp? string
 --- @field bold? boolean
 --- @field link? string
+--- @field italic? string
+--- @field underline? string
+--- @field undercurl? string
 
 
 --- @param p GithubPlus.Palette
@@ -59,7 +62,7 @@ M.setup = function(p, opts)
         -- Syntax highlighting
         Boolean                       = { fg = p.cyan.bright },
         Character                     = { fg = p.red.base },
-        Comment                       = vim.tbl_extend('force', { fg = p.ui.comment }, opts.styles.comments),
+        Comment                       = vim.tbl_extend('force', opts.styles.comments or {}, { fg = p.ui.comment }),
         Conditional                   = { fg = p.red.base },
         Constant                      = { fg = p.cyan.bright },
         Debug                         = { fg = p.red.base },
@@ -72,7 +75,7 @@ M.setup = function(p, opts)
         Identifier                    = { fg = p.fg.base },
         Ignore                        = { fg = p.fg.dim },
         Include                       = { fg = p.red.base },
-        Keyword                       = { fg = p.red.base },
+        Keyword                       = vim.tbl_extend('force', opts.styles.keywords or {}, { fg = p.red.base }),
         Label                         = { fg = p.red.base },
         Macro                         = { fg = p.red.base },
         Number                        = { fg = p.cyan.bright },
@@ -85,11 +88,11 @@ M.setup = function(p, opts)
         SpecialComment                = { link = 'Comment' },
         Statement                     = { fg = p.red.base },
         StorageClass                  = { fg = p.red.base },
-        String                        = vim.tbl_extend('force', { fg = p.green.bright }, opts.styles.strings),
+        String                        = vim.tbl_extend('force', opts.styles.strings or {}, { fg = p.green.bright }),
         Structure                     = { fg = p.purple.bright },
         Tag                           = { fg = p.green.bright },
         Todo                          = { fg = p.purple.base, bold = true },
-        Type                          = { fg = p.blue.bright },
+        Type                          = vim.tbl_extend('force', opts.styles.types or {}, { fg = p.blue.bright }),
         Typedef                       = { link = 'Type' },
         Underlined                    = { fg = p.blue.base, underline = true },
 
