@@ -40,7 +40,7 @@ M.setup = function(p, opts)
         PmenuSel                      = { bg = p.ui.selection },
         PmenuThumb                    = { bg = p.fg.dim },
         Question                      = { fg = p.blue.base },
-        Search                        = { bg = p.ui.search, fg = p.fg.base },
+        Search                        = { bg = p.ui.visual, fg = p.fg.base },
         SignColumn                    = { bg = p.bg.base },
         SpecialKey                    = { fg = p.fg.dim },
         StatusLine                    = { fg = p.fg.base, bg = p.bg.bright },
