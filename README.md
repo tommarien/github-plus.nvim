@@ -24,10 +24,6 @@ Download with your favorite package manager.
 
 ## Options
 
-The plugin provides the following configuration options:
-
-- **`transparent`** (boolean): Enable or disable a transparent background. Defaults to `false`.
-
 ### Default Configuration
 
 The plugin provides the following default settings:
