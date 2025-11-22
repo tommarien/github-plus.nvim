@@ -4,13 +4,10 @@ A lua port of the nikso theme for [VSCode](https://github.com/thenikso/nikso-vsc
 
 ## Screenshots
 
-### lua
-
-![lua](./assets/Screenshot 2025-11-22 at 13.03.30.png)
-
-### go
-
-![go](./assets/Screenshot 2025-11-22 at 13.04.19.png)
+<div align="center">
+  <h3>Lua</h3><img src="https://github.com/tommarien/github-plus.nvim/blob/main/assets/Screenshot%202025-11-22%20at%2013.03.30.png" alt="nightfox" style="border-radius:1%" />
+  <h3>Go</h3><img src="https://github.com/tommarien/github-plus.nvim/blob/main/assets/Screenshot%202025-11-22%20at%2013.04.19.png" alt="dayfox" style="border-radius:1%" />
+</div>
 
 ## Installation
 
