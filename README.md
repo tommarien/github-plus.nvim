@@ -2,6 +2,16 @@
 
 A lua port of the nikso theme for [VSCode](https://github.com/thenikso/nikso-vscode-theme), which was inspired on Github coloring.
 
+## Screenshots
+
+### lua
+
+![lua](./assets/Screenshot 2025-11-22 at 13.03.30.png)
+
+### go
+
+![go](./assets/Screenshot 2025-11-22 at 13.04.19.png)
+
 ## Installation
 
 Download with your favorite package manager.
@@ -11,6 +21,7 @@ Download with your favorite package manager.
     'tommarien/github-plus.nvim',
     lazy = false,
     priority = 1000,
+    version = '*',
     --- @type GithubPlus.Overrides
     opts = {
         transparent = true,
