@@ -17,7 +17,7 @@
 --- @field search string
 --- @field visual string
 --- @field comment string
---- @field operator string
+--- @field punctuation string
 --- @field escape string
 
 --- @class GithubPlus.Palette
@@ -69,13 +69,13 @@ p.git = {
 }
 
 p.ui = {
-    border    = '#444c56',
-    selection = '#3c444d',
-    search    = '#496380',
-    visual    = '#3c444d',
-    comment   = '#9198a1',
-    escape    = '#878e98',
-    operator  = '#9bb4bc',
+    border      = '#444c56',
+    selection   = '#3c444d',
+    search      = '#496380',
+    visual      = '#3c444d',
+    comment     = '#9198a1',
+    escape      = '#878e98',
+    punctuation = '#b1b9c6',
 }
 
 p.diff = {
