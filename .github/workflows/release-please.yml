@@ -16,7 +16,7 @@ jobs:
         with:
           # this assumes that you have created a personal access token
           # (PAT) and configured it as a GitHub action secret named
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GH_RELEASE_ME }}
           # this is a built-in strategy in release-please, see "Action Inputs"
           # for more options
           release-type: simple
