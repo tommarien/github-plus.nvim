@@ -41,7 +41,7 @@ M.setup = function(p, opts)
         PmenuThumb                    = { bg = p.fg.dim },
         Question                      = { fg = p.blue.base },
         Search                        = { bg = p.ui.visual, fg = p.fg.base },
-        SignColumn                    = { bg = p.bg.base },
+        SignColumn                    = { bg = opts.transparent and 'NONE' or p.bg.base },
         SpecialKey                    = { fg = p.fg.dim },
         StatusLine                    = { fg = p.fg.base, bg = p.bg.bright },
         StatusLineNC                  = { fg = p.fg.dim, bg = p.bg.bright },
