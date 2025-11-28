@@ -10,6 +10,8 @@ local M = {}
 --- @field operators? GithubPlus.Style
 --- @field strings? GithubPlus.Style
 --- @field types? GithubPlus.Style
+--- @field conditionals? GithubPlus.Style
+--- @field functions? GithubPlus.Style
 
 --- @class GithubPlus.Options
 --- @field terminal_colors boolean

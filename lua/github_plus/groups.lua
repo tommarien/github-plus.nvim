@@ -90,10 +90,10 @@ M.setup = function(p, opts)
         Boolean                       = { fg = p.cyan.bright },
 
         Identifier                    = { fg = p.fg.base },
-        Function                      = { fg = p.purple.bright },
+        Function                      = applyStyles({ fg = p.purple.bright }, opts.styles.functions),
 
         Statement                     = { fg = p.red.base },
-        Conditional                   = { fg = p.red.base },
+        Conditional                   = applyStyles({ fg = p.red.base }, opts.styles.conditionals),
         Repeat                        = { link = 'Conditional' },
         Label                         = { link = 'Conditional' }, -- case, default
 
@@ -162,6 +162,7 @@ M.setup = function(p, opts)
         ['@label']                    = { fg = p.red.base },
         ['@operator']                 = { link = 'Operator' },
         ['@keyword']                  = { link = 'Keyword' },
+        ['@keyword.conditional']      = { link = 'Conditional' },
         ['@module.go']                = { fg = p.fg.base },
         ['@exception']                = { fg = p.red.base },
         ['@variable']                 = { fg = p.fg.base },
