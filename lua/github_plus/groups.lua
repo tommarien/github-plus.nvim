@@ -1,5 +1,27 @@
 local M = {}
 
+
+--- @param highlight Highlight
+--- @param styles? GithubPlus.Style
+local applyStyles = function(highlight, styles)
+    if not styles then
+        return highlight
+    end
+
+    if styles.bold then
+        highlight.bold = true
+    end
+    if styles.italic then
+        highlight.italic = true
+    end
+    if styles.underline then
+        highlight.underline = true
+    end
+
+    return highlight
+end
+
+
 --- @class Highlight
 --- @field fg? string
 --- @field bg? string
@@ -59,41 +81,51 @@ M.setup = function(p, opts)
         Removed                       = { fg = p.git.delete, bg = p.diff.delete, bold = true },
 
         -- Syntax highlighting
-        Boolean                       = { fg = p.cyan.bright },
-        Character                     = { fg = p.red.base },
-        Comment                       = vim.tbl_extend('force', opts.styles.comments or {}, { fg = p.ui.comment }),
-        Conditional                   = { fg = p.red.base },
+        Comment                       = applyStyles({ fg = p.ui.comment }, opts.styles.comments),
         Constant                      = { fg = p.cyan.bright },
-        Debug                         = { fg = p.red.base },
-        Define                        = { fg = p.red.base },
-        Delimiter                     = { fg = p.fg.base },
-        Error                         = { fg = p.diagnostics.error },
-        Exception                     = { fg = p.red.base },
+        String                        = applyStyles({ fg = p.green.bright }, opts.styles.strings),
+        Character                     = { fg = p.red.base }, -- TODO: should be aligned with rest
+        Number                        = applyStyles({ fg = p.cyan.bright }, opts.styles.numbers),
         Float                         = { link = 'Number' },
-        Function                      = { fg = p.purple.bright },
+        Boolean                       = { fg = p.cyan.bright },
+
         Identifier                    = { fg = p.fg.base },
-        Ignore                        = { fg = p.fg.dim },
-        Include                       = { fg = p.red.base },
-        Keyword                       = vim.tbl_extend('force', opts.styles.keywords or {}, { fg = p.red.base }),
-        Label                         = { link = 'Conditional' },
-        Macro                         = { fg = p.red.base },
-        Number                        = vim.tbl_extend('force', opts.styles.numbers or {}, { fg = p.cyan.bright }),
-        Operator                      = vim.tbl_extend('force', opts.styles.operators or {}, { fg = p.ui.punctuation }),
-        PreCondit                     = { fg = p.red.base },
-        PreProc                       = { fg = p.red.base },
-        Repeat                        = { link = 'Conditional' },
-        Special                       = { fg = p.red.base },
-        SpecialChar                   = { fg = p.red.base },
-        SpecialComment                = { link = 'Comment' },
+        Function                      = applyStyles({ fg = p.purple.bright }, opts.styles.functions),
+
         Statement                     = { fg = p.red.base },
-        StorageClass                  = { link = 'Type' },
-        String                        = vim.tbl_extend('force', opts.styles.strings or {}, { fg = p.green.bright }),
-        Structure                     = { link = 'Type' },
-        Tag                           = { fg = p.green.bright },
-        Todo                          = { fg = p.purple.base, bold = true },
-        Type                          = vim.tbl_extend('force', opts.styles.types or {}, { fg = p.blue.bright }),
+        Conditional                   = applyStyles({ fg = p.red.base }, opts.styles.conditionals),
+        Repeat                        = { link = 'Conditional' },
+        Label                         = { link = 'Conditional' }, -- case, default
+
+        Operator                      = applyStyles({ fg = p.ui.punctuation }, opts.styles.operators),
+        Keyword                       = applyStyles({ fg = p.red.base }, opts.styles.keywords),
+        Exception                     = { fg = p.red.base },
+
+        PreProc                       = { fg = p.red.base },
+        Include                       = { link = 'PreProc' },
+        Define                        = { link = 'PreProc' },
+        Macro                         = { link = 'PreProc' },
+        PreCondit                     = { link = 'PreProc' },
+
+        Type                          = applyStyles({ fg = p.blue.bright }, opts.styles.types),
         Typedef                       = { link = 'Type' },
-        Underlined                    = { fg = p.blue.base, underline = true },
+        Structure                     = { link = 'Type' },
+        StorageClass                  = { link = 'Type' }, -- static, register
+
+        Special                       = { fg = p.red.base },
+        SpecialChar                   = { link = 'Special' },
+        Tag                           = { fg = p.green.bright },
+        Delimiter                     = { fg = p.fg.base },
+        SpecialComment                = { link = 'Comment' }, -- special things inside comments
+        Debug                         = { link = 'Special' },
+
+        Underlined                    = { underline = true },
+        bold                          = { bold = true },
+        Italic                        = { italic = true },
+
+        Error                         = { fg = p.diagnostics.error },
+        Todo                          = { fg = p.purple.base, bold = true },
+        Ignore                        = { fg = p.fg.dim },
 
         -- Treesitter highlights
         ['@text.literal']             = { fg = p.cyan.bright },
@@ -130,6 +162,7 @@ M.setup = function(p, opts)
         ['@label']                    = { fg = p.red.base },
         ['@operator']                 = { link = 'Operator' },
         ['@keyword']                  = { link = 'Keyword' },
+        ['@keyword.conditional']      = { link = 'Conditional' },
         ['@module.go']                = { fg = p.fg.base },
         ['@exception']                = { fg = p.red.base },
         ['@variable']                 = { fg = p.fg.base },

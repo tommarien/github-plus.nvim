@@ -56,11 +56,13 @@ You can customize the plugin using the available options below:
 - **`terminal_colors`** (boolean): Apply colors to the terminal.
 - **`styles`** (table): Customize syntax highlighting styles. This table supports the following keys:
   - `comments` (table): Options for styling comments (e.g., `{ italic = true }`). Supported booleans: `bold`, `italic`, `underline`.
-  - `keywords` (table): Options for keyword styling.
-  - `numbers` (table): Options for numbers, such as bold or italic.
-  - `operators` (table): Customize operator appearance.
-  - `strings` (table): Style string values.
-  - `types` (table): Adjust type highlight settings.
+  - `keywords` (table): Options for styling keywords.
+  - `numbers` (table): Options for styling numbers.
+  - `operators` (table): Options for styling operators.
+  - `strings` (table): Options for styling strings.
+  - `types` (table): Options for styling types.
+  - `conditionals` (table): Options for styling conditionals.
+  - `functions` (table): Options for styling functions.
 
 ### Usage
 
