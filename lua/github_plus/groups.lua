@@ -97,7 +97,7 @@ M.setup = function(p, opts)
         Repeat                        = { link = 'Conditional' },
         Label                         = { link = 'Conditional' }, -- case, default
 
-        Operator                      = applyStyles({ fg = p.ui.punctuation }, opts.styles.operators),
+        Operator                      = applyStyles({ fg = p.syntax.operators }, opts.styles.operators),
         Keyword                       = applyStyles({ fg = p.red.base }, opts.styles.keywords),
         Exception                     = { fg = p.red.base },
 
@@ -107,7 +107,7 @@ M.setup = function(p, opts)
         Macro                         = { link = 'PreProc' },
         PreCondit                     = { link = 'PreProc' },
 
-        Type                          = applyStyles({ fg = p.blue.bright }, opts.styles.types),
+        Type                          = applyStyles({ fg = p.syntax.types }, opts.styles.types),
         Typedef                       = { link = 'Type' },
         Structure                     = { link = 'Type' },
         StorageClass                  = { link = 'Type' }, -- static, register
@@ -135,17 +135,18 @@ M.setup = function(p, opts)
         ['@text.underline']           = { underline = true },
         ['@text.todo']                = { fg = p.purple.base, bold = true },
         ['@comment']                  = { link = 'Comment' },
-        ['@punctuation']              = { fg = p.ui.punctuation },
+        ['@punctuation']              = { fg = p.syntax.punctuation },
         ['@constant']                 = { link = 'Constant' },
         ['@constant.builtin']         = { link = '@constant' },
         ['@constant.macro']           = { link = '@constant' },
         ['@define']                   = { fg = p.red.base },
         ['@macro']                    = { fg = p.red.base },
         ['@string']                   = { link = 'String' },
-        ['@string.escape']            = { fg = p.ui.escape },
+        ['@string.escape']            = { fg = p.syntax.escape },
         ['@string.regexp']            = { fg = p.green.bright },
         ['@string.special']           = { link = 'Special' },
         ['@character']                = { link = 'Character' },
+        ['@character.printf']         = { link = 'Special' },
         ['@character.special']        = { link = 'Character' },
         ['@number']                   = { link = 'Number' },
         ['@boolean']                  = { link = 'Boolean' },

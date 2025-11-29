@@ -1,3 +1,5 @@
+local colors = require('github_plus.utils.colors')
+
 --- @class GithubPlus.Palette.BrightColor
 --- @field base string
 --- @field bright string
@@ -17,8 +19,12 @@
 --- @field search string
 --- @field visual string
 --- @field comment string
---- @field punctuation string
+
+--- @class GithubPlus.Palette.Syntax
 --- @field escape string
+--- @field punctuation string
+--- @field operators string
+--- @field types string
 
 --- @class GithubPlus.Palette
 --- @field bg GithubPlus.Palette.BrightDimColor
@@ -59,7 +65,7 @@ p.diagnostics = {
     hint = p.black.bright,
     info = p.blue.base,
     warn = p.yellow.base,
-    error = '#e5534b'
+    error = colors.blend(p.red.base, p.black.base, 0.1),
 }
 
 p.git = {
@@ -69,13 +75,20 @@ p.git = {
 }
 
 p.ui = {
-    border      = '#444c56',
-    selection   = '#3c444d',
-    search      = '#496380',
-    visual      = '#3c444d',
-    comment     = '#9198a1',
+    border    = '#444c56',
+    selection = '#3c444d',
+    search    = '#496380',
+    visual    = '#3c444d',
+    comment   = '#9198a1',
+}
+
+p.syntax = {
     escape      = '#878e98',
-    punctuation = '#b1b9c6',
+    operators   = '#adbac7',
+    types       = p.blue.bright,
+    punctuation = '#929ea9'
+    -- operators   = colors.blend(p.red.base, p.fg.base, 0.7),
+    -- types       = colors.blend(p.orange.base, p.yellow.base, 0.7)
 }
 
 p.diff = {
