@@ -84,7 +84,7 @@ M.setup = function(p, opts)
         Comment                       = applyStyles({ fg = p.ui.comment }, opts.styles.comments),
         Constant                      = { fg = p.cyan.bright },
         String                        = applyStyles({ fg = p.green.bright }, opts.styles.strings),
-        Character                     = { fg = p.red.base }, -- TODO: should be aligned with rest
+        Character                     = { link = 'String' },
         Number                        = applyStyles({ fg = p.cyan.bright }, opts.styles.numbers),
         Float                         = { link = 'Number' },
         Boolean                       = { fg = p.cyan.bright },
@@ -143,6 +143,7 @@ M.setup = function(p, opts)
         ['@macro']                    = { fg = p.red.base },
         ['@string']                   = { link = 'String' },
         ['@string.escape']            = { fg = p.ui.escape },
+        ['@string.regexp']            = { fg = p.green.bright },
         ['@string.special']           = { link = 'Special' },
         ['@character']                = { link = 'Character' },
         ['@character.special']        = { link = 'Character' },
