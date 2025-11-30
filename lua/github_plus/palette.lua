@@ -84,10 +84,9 @@ p.ui = {
 
 p.syntax = {
     escape      = '#878e98',
-    operators   = '#adbac7',
     types       = p.blue.bright,
     punctuation = '#b2b9c6',
-    -- operators   = colors.blend(p.red.base, p.fg.base, 0.7),
+    operators   = '#b2b9c6',
     -- types       = colors.blend(p.orange.base, p.yellow.base, 0.7)
 }
 
