@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.1.1](https://github.com/tommarien/github-plus.nvim/compare/v1.1.0...v1.1.1) (2025-11-30)
+
+
+### Bug Fixes
+
+* **groups:** align operators back with punctuation, less is more ([2cbfd35](https://github.com/tommarien/github-plus.nvim/commit/2cbfd3532b6b09d364f9ea78bb2cc45189ee6475))
+* **groups:** cleanup todo and align regex with strings ([0142edb](https://github.com/tommarien/github-plus.nvim/commit/0142edb2229e67c3d26ef3b63889db33e25b082f))
+* **palette:** functions should stand out more, realign punctuation ([f95a941](https://github.com/tommarien/github-plus.nvim/commit/f95a9412fa5f061989b3aa2d3c0d1b0089342184))
+
 ## [1.1.0](https://github.com/tommarien/github-plus.nvim/compare/v1.0.1...v1.1.0) (2025-11-28)
 
 
