@@ -51,7 +51,7 @@ local p = {
     yellow = { base = '#daaa3f', bright = '#f2cc60' },
     orange = { base = '#f69d50', bright = '#ffb86b' },
     blue   = { base = '#539bf5', bright = '#79c0ff' },
-    purple = { base = '#b083f0', bright = '#d2a8ff' },
+    purple = { base = '#b083f0', bright = '#dcbdfb' },
     cyan   = { base = '#96d0ff', bright = '#a5d6ff' },
     white  = { base = '#d1d7e0', bright = '#fbffff' },
     pink   = { base = '#e275ad', bright = '#ffb3d8' },
@@ -86,7 +86,7 @@ p.syntax = {
     escape      = '#878e98',
     operators   = '#adbac7',
     types       = p.blue.bright,
-    punctuation = '#929ea9'
+    punctuation = '#b2b9c6',
     -- operators   = colors.blend(p.red.base, p.fg.base, 0.7),
     -- types       = colors.blend(p.orange.base, p.yellow.base, 0.7)
 }
