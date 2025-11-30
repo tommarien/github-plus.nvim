@@ -21,7 +21,6 @@ local colors = require('github_plus.utils.colors')
 --- @field comment string
 
 --- @class GithubPlus.Palette.Syntax
---- @field escape string
 --- @field punctuation string
 --- @field operators string
 --- @field types string
@@ -83,7 +82,6 @@ p.ui = {
 }
 
 p.syntax = {
-    escape      = '#878e98',
     types       = p.blue.bright,
     punctuation = '#b2b9c6',
     operators   = '#b2b9c6',
