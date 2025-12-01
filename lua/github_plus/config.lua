@@ -16,10 +16,12 @@ local M = {}
 --- @class GithubPlus.Options
 --- @field terminal_colors boolean
 --- @field transparent boolean
+--- @field semantic boolean
 --- @field styles GithubPlus.Styles
 local defaults = {
     terminal_colors = true,
     transparent = false,
+    semantic = false,
     styles = {
         comments = {
             italic = true,
@@ -45,6 +47,7 @@ end
 --- @class GithubPlus.Overrides
 --- @field transparent? boolean Enable transparent background
 --- @field terminal_colors? boolean Apply colors to terminal
+--- @field semantic? boolean More semantic highlighting
 --- @field styles? GithubPlus.Styles
 --- @param opts? GithubPlus.Overrides
 M.setup = function(opts)

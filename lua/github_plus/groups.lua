@@ -35,6 +35,8 @@ end
 --- @param p GithubPlus.Palette
 --- @param opts GithubPlus.Options
 M.setup = function(p, opts)
+    local semantic = opts.semantic
+
     ---@type table<string, Highlight>
     return {
         -- Editor highlights
@@ -107,7 +109,8 @@ M.setup = function(p, opts)
         Macro                           = { link = 'PreProc' },
         PreCondit                       = { link = 'PreProc' },
 
-        Type                            = applyStyles({ fg = p.syntax.types }, opts.styles.types),
+        Type                            = applyStyles({ fg = semantic and p.purple.base or p.syntax.types },
+            opts.styles.types),
         Typedef                         = { link = 'Type' },
         Structure                       = { link = 'Type' },
         StorageClass                    = { link = 'Type' }, -- static, register
@@ -160,7 +163,7 @@ M.setup = function(p, opts)
         ['@parameter']                  = { fg = p.fg.base },
         ['@method']                     = { link = 'Function' },
         ['@field']                      = { fg = p.fg.base },
-        ['@property']                   = { fg = p.fg.base },
+        ['@property']                   = { fg = semantic and p.cyan.base or p.fg.base },
         ['@constructor']                = { link = 'Function' },
         ['@conditional']                = { link = 'Conditional' },
         ['@repeat']                     = { fg = p.red.base },
@@ -172,7 +175,7 @@ M.setup = function(p, opts)
         ['@exception']                  = { fg = p.red.base },
         ['@variable']                   = { fg = p.fg.base },
         ['@variable.builtin']           = { fg = p.red.base },
-        ['@variable.member']            = { fg = p.fg.base },
+        ['@variable.member']            = { fg = semantic and p.cyan.base or p.fg.base },
         ['@type']                       = { link = 'Type' },
         ['@type.definition']            = { link = 'Typedef' },
         ['@type.builtin']               = { link = 'Type' },
