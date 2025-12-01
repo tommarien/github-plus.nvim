@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.2.0](https://github.com/tommarien/github-plus.nvim/compare/v1.1.1...v1.2.0) (2025-12-01)
+
+
+### Features
+
+* added semantic option ([1cf9245](https://github.com/tommarien/github-plus.nvim/commit/1cf92453a00ce28f5c9a0bdec2384f8fdeb4ac31))
+
+
+### Bug Fixes
+
+* **groups:** change escape to green.base ([c0e71ca](https://github.com/tommarien/github-plus.nvim/commit/c0e71ca92f72ee3febd3f7e395d8783005d5f41c))
+* improved markdown rendering ([d752787](https://github.com/tommarien/github-plus.nvim/commit/d7527870fa038c220f9a928ce61dc10cccbc9ef4))
+
 ## [1.1.1](https://github.com/tommarien/github-plus.nvim/compare/v1.1.0...v1.1.1) (2025-11-30)
 
 
