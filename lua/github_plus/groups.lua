@@ -279,8 +279,9 @@ M.setup = function(p, opts)
         LeapBackdrop                    = { fg = p.ui.comment },
 
         -- Blink.cmp
-        BlinkCmpMenu                    = { fg = p.fg.base, bg = p.bg.bright },
-        BlinkCmpMenuBorder              = { fg = p.ui.border, bg = p.bg.bright },
+        BlinkCmpMenu                    = { fg = p.fg.base, bg = p.bg.base },
+        BlinkCmpMenuBorder              = { link = 'FloatBorder' },
+        BlinkCmpMenuSelection           = { bg = p.ui.selection },
 
         BlinkCmpDoc                     = { fg = p.fg.base, bg = p.bg.bright },
         BlinkCmpDocBorder               = { link = 'FloatBorder' },
