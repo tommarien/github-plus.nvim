@@ -84,8 +84,9 @@ p.ui = {
 p.syntax = {
     types       = p.blue.bright,
     punctuation = '#b2b9c6',
-    operators   = colors.blend(colors.blend(p.red.base, p.orange.bright, 0.5), p.black.base, 0.2),
 }
+
+p.syntax.operators = p.syntax.punctuation
 
 p.diff = {
     add = '#2f4839',

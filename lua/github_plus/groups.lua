@@ -116,7 +116,7 @@ M.setup = function(p, opts)
         StorageClass                    = { link = 'Type' }, -- static, register
 
         -- Special                       = { fg = p.red.base },
-        Special                         = { fg = p.syntax.operators },
+        Special                         = { fg = p.red.base },
         SpecialChar                     = { link = 'Special' },
         Tag                             = { fg = p.green.bright },
         Delimiter                       = { fg = p.fg.base },
