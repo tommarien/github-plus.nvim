@@ -61,7 +61,7 @@ M.setup = function(p, opts)
         NormalFloat                     = { fg = p.fg.base, bg = p.bg.bright },
         Pmenu                           = { fg = p.fg.base, bg = p.bg.bright },
         PmenuSbar                       = { bg = p.bg.bright },
-        PmenuSel                        = { bg = p.ui.selection },
+        PmenuSel                        = { bg = p.bg.bright },
         PmenuThumb                      = { bg = p.fg.dim },
         Question                        = { fg = p.blue.base },
         Search                          = { bg = p.ui.visual, fg = p.fg.base },
@@ -244,7 +244,7 @@ M.setup = function(p, opts)
         TelescopePromptBorder           = { fg = p.ui.border },
         TelescopeResultsBorder          = { fg = p.ui.border },
         TelescopePreviewBorder          = { fg = p.ui.border },
-        TelescopeSelection              = { bg = p.ui.selection },
+        TelescopeSelection              = { link = 'PmenuSel' },
         TelescopeMatching               = { fg = p.blue.base, bold = true },
         TelescopeMultiSelection         = { bg = p.ui.selection },
 
