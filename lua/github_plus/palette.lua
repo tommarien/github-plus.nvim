@@ -57,7 +57,7 @@ local p = {
     none   = 'NONE'
 }
 
-p.bg = { base = p.black.base, bright = '#2d333b', dim = '#1c2128' }
+p.bg = { base = p.black.base, bright = '#2d323b', dim = '#1c2128' }
 p.fg = { base = p.white.base, dim = p.black.bright }
 
 p.diagnostics = {
