@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.2.1](https://github.com/tommarien/github-plus.nvim/compare/v1.2.0...v1.2.1) (2025-12-04)
+
+
+### Bug Fixes
+
+* **groups:** align markdown ([38cc985](https://github.com/tommarien/github-plus.nvim/commit/38cc985eeb037d538d075e8e348e52ff8a990167))
+* **palette:** correct bg.bright ([5790c5e](https://github.com/tommarien/github-plus.nvim/commit/5790c5e693a2a76abf220245aab8f45999867673))
+* **palette:** correct PmenuSel ([a70d2b2](https://github.com/tommarien/github-plus.nvim/commit/a70d2b204b87cbc3352970219016ee464f5b0944))
+* **palette:** improve blink.cmp visibility ([8d625e0](https://github.com/tommarien/github-plus.nvim/commit/8d625e06852ed23b0335e844cd999146a48c6bd4))
+* **palette:** undo strange operator colors ([c8d681d](https://github.com/tommarien/github-plus.nvim/commit/c8d681d4bb0bcb7542a30fa2de9e469e0139567e))
+
 ## [1.2.0](https://github.com/tommarien/github-plus.nvim/compare/v1.1.1...v1.2.0) (2025-12-01)
 
 
