@@ -19,6 +19,8 @@ local colors = require('github_plus.utils.colors')
 --- @field search string
 --- @field visual string
 --- @field comment string
+--- @field line_nr string
+--- @field indent string
 
 --- @class GithubPlus.Palette.Syntax
 --- @field punctuation string
@@ -79,11 +81,14 @@ p.ui = {
     search    = '#496380',
     visual    = '#3c444d',
     comment   = '#9198a1',
+    line_nr   = '#4e5a5f',
+    indent    = '#4e5054'
 }
 
 p.syntax = {
     types       = p.blue.bright,
     punctuation = '#b2b9c6',
+    escape      = '#858c96'
 }
 
 p.syntax.operators = p.syntax.punctuation
