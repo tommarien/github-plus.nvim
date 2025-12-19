@@ -99,7 +99,7 @@ M.setup = function(p, opts)
         Repeat                            = { link = 'Conditional' },
         Label                             = { link = 'Conditional' }, -- case, default
 
-        Operator                          = applyStyles({ fg = p.syntax.operators }, opts.styles.operators),
+        Operator                          = applyStyles({ fg = p.red.base }, opts.styles.operators),
         Keyword                           = applyStyles({ fg = p.red.base }, opts.styles.keywords),
         Exception                         = { fg = p.red.base },
 

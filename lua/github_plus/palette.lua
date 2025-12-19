@@ -24,7 +24,6 @@ local colors = require('github_plus.utils.colors')
 
 --- @class GithubPlus.Palette.Syntax
 --- @field punctuation string
---- @field operators string
 --- @field types string
 
 --- @class GithubPlus.Palette
@@ -90,8 +89,6 @@ p.syntax = {
     punctuation = '#b2b9c6',
     escape      = '#858c96'
 }
-
-p.syntax.operators = p.syntax.punctuation
 
 p.diff = {
     add = '#2f4839',
