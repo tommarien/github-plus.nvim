@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.3.0](https://github.com/tommarien/github-plus.nvim/compare/v1.2.1...v1.3.0) (2025-12-22)
+
+
+### Features
+
+* **styles:** no default styles ([ec86549](https://github.com/tommarien/github-plus.nvim/commit/ec865494d574f357551c1597047ccefbc482f515))
+
+
+### Bug Fixes
+
+* correct some highlights ([0eeb226](https://github.com/tommarien/github-plus.nvim/commit/0eeb2269a452e7d3fe3bb6b84dd81389b46118b3))
+* **palette:** operator is red.base ([49ef485](https://github.com/tommarien/github-plus.nvim/commit/49ef4856d80544ab99de9dcbc4941680059f448d))
+
 ## [1.2.1](https://github.com/tommarien/github-plus.nvim/compare/v1.2.0...v1.2.1) (2025-12-04)
 
 
