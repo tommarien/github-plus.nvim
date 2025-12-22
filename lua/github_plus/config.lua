@@ -22,11 +22,7 @@ local defaults = {
     terminal_colors = true,
     transparent = false,
     semantic = false,
-    styles = {
-        comments = {
-            italic = true,
-        },
-    }
+    styles = {}
 }
 
 M.deep_extend = function(...)

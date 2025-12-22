@@ -41,11 +41,6 @@ The plugin provides the following default settings:
 {
     terminal_colors = true, -- Enables terminal color highlighting
     transparent = false,    -- Disables transparent background by default
-    styles = {
-        comments = {
-            italic = true,  -- Italic comments
-        },
-    },
 }
 ```
 
