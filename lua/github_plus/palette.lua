@@ -51,7 +51,7 @@ local p = {
     yellow = { base = '#daaa3f', bright = '#f2cc60' },
     orange = { base = '#f69d50', bright = '#ffb86b' },
     blue   = { base = '#539bf5', bright = '#79c0ff' },
-    purple = { base = '#b083f0', bright = '#dcbdfb' },
+    purple = { base = '#b377cf', bright = '#dcbdfb' },
     cyan   = { base = '#96d0ff', bright = '#a5d6ff' },
     white  = { base = '#d1d7e0', bright = '#fbffff' },
     pink   = { base = '#e275ad', bright = '#ffb3d8' },
