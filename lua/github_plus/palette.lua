@@ -76,7 +76,7 @@ p.git = {
 
 p.ui = {
     border    = '#444c56',
-    selection = '#3c444d',
+    selection = '#303a46',
     search    = '#496380',
     visual    = '#3c444d',
     comment   = '#9198a1',
