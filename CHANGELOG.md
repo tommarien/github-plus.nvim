@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.3.2](https://github.com/tommarien/github-plus.nvim/compare/v1.3.1...v1.3.2) (2025-12-24)
+
+
+### Bug Fixes
+
+* **groups:** make nvim-cmp highlights work ([53063dd](https://github.com/tommarien/github-plus.nvim/commit/53063dd66d00d9c1db9f6bbf6b545c2e1616f27e))
+* **palette:** correct reference text again ([9e639b1](https://github.com/tommarien/github-plus.nvim/commit/9e639b1f8e7312c2b5bb0a7cea93ca27d5888c41))
+* **palette:** more visible selection color ([b7ddc38](https://github.com/tommarien/github-plus.nvim/commit/b7ddc38253b1163fc62b697840c1523ec0bb75e0))
+
 ## [1.3.1](https://github.com/tommarien/github-plus.nvim/compare/v1.3.0...v1.3.1) (2025-12-23)
 
 
