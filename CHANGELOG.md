@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.3.1](https://github.com/tommarien/github-plus.nvim/compare/v1.3.0...v1.3.1) (2025-12-23)
+
+
+### Bug Fixes
+
+* **palette:** purple wrong shade ([b071223](https://github.com/tommarien/github-plus.nvim/commit/b0712239633e13f93f31cb03eb578cf91607f13b))
+* **palette:** wrong selection color ([3647f21](https://github.com/tommarien/github-plus.nvim/commit/3647f21282a58860a97b10a0e9ec219f8c5555d8))
+
 ## [1.3.0](https://github.com/tommarien/github-plus.nvim/compare/v1.2.1...v1.3.0) (2025-12-22)
 
 
