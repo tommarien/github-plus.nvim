@@ -78,9 +78,9 @@ M.setup = function(p, opts)
         WarningMsg                        = { fg = p.diagnostics.warn },
         Whitespace                        = { fg = p.fg.dim },
         WinSeparator                      = { fg = p.ui.border },
-        Added                             = { fg = p.git.add, bg = p.diff.add, bold = true },
-        Changed                           = { fg = p.git.change, bg = p.diff.change, bold = true },
-        Removed                           = { fg = p.git.delete, bg = p.diff.delete, bold = true },
+        Added                             = { bg = p.diff.add, bold = true },
+        Changed                           = { bg = p.diff.change, bold = true },
+        Removed                           = { bg = p.diff.delete, bold = true },
 
         -- Syntax highlighting
         Comment                           = applyStyles({ fg = p.ui.comment }, opts.styles.comments),
@@ -234,9 +234,9 @@ M.setup = function(p, opts)
         DiffviewChange                    = { bg = p.diff.change, bold = true },
         DiffviewDelete                    = { bg = p.diff.delete, bold = true },
         DiffviewText                      = { bg = p.diff.text, bold = true },
-        DiffAdd                           = { fg = p.git.add, bg = p.diff.add, bold = true },
+        DiffAdd                           = { bg = p.diff.add, bold = true },
         DiffChange                        = { bg = p.diff.change },
-        DiffDelete                        = { fg = p.git.delete, bg = p.diff.delete },
+        DiffDelete                        = { bg = p.diff.delete },
         DiffText                          = { bg = p.diff.text },
 
         -- Telescope
