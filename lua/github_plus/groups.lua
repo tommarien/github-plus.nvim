@@ -59,9 +59,9 @@ M.setup = function(p, opts)
         NonText                           = { fg = p.fg.dim },
         Normal                            = { fg = p.fg.base, bg = opts.transparent and 'NONE' or p.bg.base },
         NormalFloat                       = { fg = p.fg.base, bg = p.bg.bright },
-        Pmenu                             = { fg = p.fg.base, bg = p.bg.bright },
+        Pmenu                             = { fg = p.fg.base, bg = p.bg.base },
         PmenuSbar                         = { bg = p.bg.bright },
-        PmenuSel                          = { bg = p.bg.bright },
+        PmenuSel                          = { bg = p.ui.selection },
         PmenuThumb                        = { bg = p.fg.dim },
         Question                          = { fg = p.blue.base },
         Search                            = { bg = p.ui.visual, fg = p.fg.base },
@@ -281,7 +281,7 @@ M.setup = function(p, opts)
         -- Blink.cmp
         BlinkCmpMenu                      = { fg = p.fg.base, bg = p.bg.base },
         BlinkCmpMenuBorder                = { link = 'FloatBorder' },
-        BlinkCmpMenuSelection             = { bg = p.ui.selection },
+        BlinkCmpMenuSelection             = { link = 'PmenuSel' },
 
         BlinkCmpDoc                       = { fg = p.fg.base, bg = p.bg.bright },
         BlinkCmpDocBorder                 = { link = 'FloatBorder' },
@@ -318,6 +318,37 @@ M.setup = function(p, opts)
         BlinkCmpKindEnumMember            = { link = '@variable.member' },
         BlinkCmpKindOperator              = { link = 'Operator' },
         BlinkCmpKindSnippet               = { fg = p.fg.dim },
+
+        -- nvim-cmp
+        CmpItemAbbr                       = { fg = p.fg.base },
+        CmpItemAbbrDeprecated             = { fg = p.fg.dim, strikethrough = true },
+        CmpItemAbbrMatch                  = { bold = true },
+        CmpItemAbbrMatchFuzzy             = { bold = true },
+        CmpItemMenu                       = { link = 'Comment' },
+
+        CmpItemKind                       = { fg = p.fg.dim },
+        CmpItemKindKeyword                = { link = 'Keyword' },
+        CmpItemKindVariable               = { link = '@variable' },
+        CmpItemKindConstant               = { link = '@constant' },
+        CmpItemKindReference              = { link = 'Keyword' },
+        CmpItemKindValue                  = { link = 'Keyword' },
+
+        CmpItemKindFunction               = { link = 'Function' },
+        CmpItemKindMethod                 = { link = 'Function' },
+        CmpItemKindConstructor            = { link = '@constructor' },
+        CmpItemKindInterface              = { link = 'Constant' },
+        CmpItemKindEvent                  = { link = 'Constant' },
+        CmpItemKindEnum                   = { link = 'Constant' },
+        CmpItemKindUnit                   = { link = 'Constant' },
+        CmpItemKindClass                  = { link = 'Type' },
+        CmpItemKindStruct                 = { link = 'Type' },
+        CmpItemKindModule                 = { link = '@module' },
+        CmpItemKindProperty               = { link = '@property' },
+        CmpItemKindField                  = { link = '@variable.member' },
+        CmpItemKindTypeParameter          = { link = '@variable.member' },
+        CmpItemKindEnumMember             = { link = '@variable.member' },
+        CmpItemKindOperator               = { link = 'Operator' },
+        CmpItemKindSnippet                = { fg = p.fg.dim },
 
         -- Snacks nvim
         SnacksPicker                      = { link = 'Normal' },
