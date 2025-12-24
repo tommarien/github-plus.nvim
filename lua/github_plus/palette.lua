@@ -15,6 +15,7 @@ local colors = require('github_plus.utils.colors')
 
 --- @class GithubPlus.Palette.UI
 --- @field border string
+--- @field reference string
 --- @field selection string
 --- @field search string
 --- @field visual string
@@ -76,7 +77,7 @@ p.git = {
 
 p.ui = {
     border    = '#444c56',
-    selection = '#303a46',
+    reference = '#303a46',
     selection = '#454a56',
     search    = '#496380',
     visual    = '#3c444d',

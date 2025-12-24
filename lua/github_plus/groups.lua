@@ -214,9 +214,9 @@ M.setup = function(p, opts)
         DiagnosticUnderlineWarn           = { sp = p.diagnostics.warn, undercurl = true },
         DiagnosticUnderlineInfo           = { sp = p.diagnostics.info, undercurl = true },
         DiagnosticUnderlineHint           = { sp = p.diagnostics.hint, undercurl = true },
-        LspReferenceText                  = { bg = p.ui.selection },
-        LspReferenceRead                  = { bg = p.ui.selection },
-        LspReferenceWrite                 = { bg = p.ui.selection },
+        LspReferenceText                  = { bg = p.ui.reference },
+        LspReferenceRead                  = { bg = p.ui.reference },
+        LspReferenceWrite                 = { bg = p.ui.reference },
         LspSignatureActiveParameter       = { fg = p.orange.base, bold = true },
 
         -- Git signs
