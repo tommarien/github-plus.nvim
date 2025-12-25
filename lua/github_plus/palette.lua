@@ -73,6 +73,7 @@ p.git = {
     add = p.green.base,
     change = p.yellow.base,
     delete = p.red.base,
+    tews = p.blue.base,
 }
 
 p.ui = {
@@ -93,9 +94,9 @@ p.syntax = {
 }
 
 p.diff = {
-    add = '#2f4839',
-    change = '#29384c',
-    delete = '#57393c',
+    add = colors.blend(p.git.add, p.bg.dim, 0.8),
+    change = colors.blend(p.git.change, p.bg.dim, 0.9),
+    delete = colors.blend(p.git.delete, p.bg.dim, 0.8),
     text = p.ui.search
 }
 

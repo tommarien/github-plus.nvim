@@ -78,9 +78,9 @@ M.setup = function(p, opts)
         WarningMsg                        = { fg = p.diagnostics.warn },
         Whitespace                        = { fg = p.fg.dim },
         WinSeparator                      = { fg = p.ui.border },
-        Added                             = { bg = p.diff.add, bold = true },
-        Changed                           = { bg = p.diff.change, bold = true },
-        Removed                           = { bg = p.diff.delete, bold = true },
+        Added                             = { fg = p.git.add, bg = p.diff.add, bold = true },
+        Changed                           = { fg = p.git.change, bg = p.diff.change, bold = true },
+        Removed                           = { fg = p.git.delete, bg = p.diff.delete, bold = true },
 
         -- Syntax highlighting
         Comment                           = applyStyles({ fg = p.ui.comment }, opts.styles.comments),
