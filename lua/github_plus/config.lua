@@ -21,7 +21,7 @@ local M = {}
 local defaults = {
     terminal_colors = true,
     transparent = false,
-    semantic = false,
+    semantic = true,
     styles = {}
 }
 

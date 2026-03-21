@@ -40,7 +40,8 @@ The plugin provides the following default settings:
 ```lua
 {
     terminal_colors = true, -- Enables terminal color highlighting
-    transparent = false,    -- Disables transparent background by default
+    transparent = false,    -- Disables transparent background
+    semantic = true,        -- Enables semantic highlighting
 }
 ```
 
