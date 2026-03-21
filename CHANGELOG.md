@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/tommarien/github-plus.nvim/compare/v1.3.3...v1.4.0) (2026-03-21)
+
+
+### Features
+
+* **config:** enable semantic highlighting by default ([0dd19b5](https://github.com/tommarien/github-plus.nvim/commit/0dd19b56c101b85af9e43fadf44fe5946b4d064e))
+
 ## [1.3.3](https://github.com/tommarien/github-plus.nvim/compare/v1.3.2...v1.3.3) (2025-12-25)
 
 
