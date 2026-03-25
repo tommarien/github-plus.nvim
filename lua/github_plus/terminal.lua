@@ -11,14 +11,14 @@ M.set_terminal_colors = function(p)
     vim.g.terminal_color_6 = p.cyan.base
     vim.g.terminal_color_7 = p.white.base
 
-    vim.g.terminal_color_8 = p.black.bright
-    vim.g.terminal_color_9 = p.red.bright
-    vim.g.terminal_color_10 = p.green.bright
-    vim.g.terminal_color_11 = p.yellow.bright
-    vim.g.terminal_color_12 = p.blue.bright
-    vim.g.terminal_color_13 = p.purple.bright
-    vim.g.terminal_color_14 = p.cyan.bright
-    vim.g.terminal_color_15 = p.white.bright
+    vim.g.terminal_color_8 = p.black.emphasis
+    vim.g.terminal_color_9 = p.red.emphasis
+    vim.g.terminal_color_10 = p.green.emphasis
+    vim.g.terminal_color_11 = p.yellow.emphasis
+    vim.g.terminal_color_12 = p.blue.emphasis
+    vim.g.terminal_color_13 = p.purple.emphasis
+    vim.g.terminal_color_14 = p.cyan.emphasis
+    vim.g.terminal_color_15 = p.white.emphasis
 end
 
 return M

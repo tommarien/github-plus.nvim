@@ -1,17 +1,17 @@
 local colors = require('github_plus.utils.colors')
 
---- @class GithubPlus.Palette.BrightColor
+--- @class GithubPlus.Palette.EmphasisColor
 --- @field base string
---- @field bright string
+--- @field emphasis string
 
---- @class GithubPlus.Palette.DimColor
+--- @class GithubPlus.Palette.MutedColor
 --- @field base string
---- @field dim string
+--- @field muted string
 
---- @class GithubPlus.Palette.BrightDimColor
+--- @class GithubPlus.Palette.EmphasisMutedColor
 --- @field base string
---- @field bright string
---- @field dim string
+--- @field emphasis string
+--- @field muted string
 
 --- @class GithubPlus.Palette.UI
 --- @field border string
@@ -26,44 +26,46 @@ local colors = require('github_plus.utils.colors')
 --- @class GithubPlus.Palette.Syntax
 --- @field punctuation string
 --- @field types string
+--- @field escape string
 
 --- @class GithubPlus.Palette
---- @field bg GithubPlus.Palette.BrightDimColor
---- @field fg GithubPlus.Palette.DimColor
---- @field black GithubPlus.Palette.BrightColor
---- @field red GithubPlus.Palette.BrightColor
---- @field green GithubPlus.Palette.BrightColor
---- @field yellow GithubPlus.Palette.BrightColor
---- @field orange GithubPlus.Palette.BrightColor
---- @field blue GithubPlus.Palette.BrightColor
---- @field purple GithubPlus.Palette.BrightColor
---- @field cyan GithubPlus.Palette.BrightColor
---- @field white GithubPlus.Palette.BrightColor
---- @field pink GithubPlus.Palette.BrightColor
+--- @field bg GithubPlus.Palette.EmphasisMutedColor
+--- @field fg GithubPlus.Palette.MutedColor
+--- @field black GithubPlus.Palette.EmphasisColor
+--- @field red GithubPlus.Palette.EmphasisColor
+--- @field green GithubPlus.Palette.EmphasisColor
+--- @field yellow GithubPlus.Palette.EmphasisColor
+--- @field orange GithubPlus.Palette.EmphasisColor
+--- @field blue GithubPlus.Palette.EmphasisColor
+--- @field purple GithubPlus.Palette.EmphasisColor
+--- @field cyan GithubPlus.Palette.EmphasisColor
+--- @field white GithubPlus.Palette.EmphasisColor
+--- @field pink GithubPlus.Palette.EmphasisColor
 --- @field none string
 --- @field diagnostics { hint: string, info: string, warn:string, error: string }
 --- @field git { add:string, change:string, delete:string }
 --- @field diff { add:string, change:string, delete:string, text:string }
+--- @field syntax GithubPlus.Palette.Syntax
 --- @field ui GithubPlus.Palette.UI
 local p = {
-    black  = { base = '#282c33', bright = '#768390' },
-    red    = { base = '#f47067', bright = '#ff938a' },
-    green  = { base = '#57ab5a', bright = '#8edb8c' },
-    yellow = { base = '#daaa3f', bright = '#f2cc60' },
-    orange = { base = '#f69d50', bright = '#ffb86b' },
-    blue   = { base = '#539bf5', bright = '#79c0ff' },
-    purple = { base = '#b377cf', bright = '#dcbdfb' },
-    cyan   = { base = '#96d0ff', bright = '#a5d6ff' },
-    white  = { base = '#d1d7e0', bright = '#fbffff' },
-    pink   = { base = '#e275ad', bright = '#ffb3d8' },
+    black  = { base = '#282c33', emphasis = '#768390' },
+    red    = { base = '#f47067', emphasis = '#ff938a' },
+    green  = { base = '#57ab5a', emphasis = '#8edb8c' },
+    yellow = { base = '#daaa3f', emphasis = '#f2cc60' },
+    orange = { base = '#f69d50', emphasis = '#ffb86b' },
+    blue   = { base = '#539bf5', emphasis = '#79c0ff' },
+    purple = { base = '#b377cf', emphasis = '#dcbdfb' },
+    cyan   = { base = '#96d0ff', emphasis = '#a5d6ff' },
+    white  = { base = '#d1d7e0', emphasis = '#fbffff' },
+    pink   = { base = '#e275ad', emphasis = '#ffb3d8' },
     none   = 'NONE'
 }
 
-p.bg = { base = p.black.base, bright = '#2d323b', dim = '#1c2128' }
-p.fg = { base = p.white.base, dim = p.black.bright }
+p.bg = { base = p.black.base, emphasis = '#2d323b', muted = '#1c2128' }
+p.fg = { base = p.white.base, muted = p.black.emphasis }
 
 p.diagnostics = {
-    hint = p.black.bright,
+    hint = p.black.emphasis,
     info = p.blue.base,
     warn = p.yellow.base,
     error = colors.blend(p.red.base, p.black.base, 0.1),
@@ -73,7 +75,6 @@ p.git = {
     add = p.green.base,
     change = p.yellow.base,
     delete = p.red.base,
-    tews = p.blue.base,
 }
 
 p.ui = {
@@ -88,15 +89,15 @@ p.ui = {
 }
 
 p.syntax = {
-    types       = p.blue.bright,
+    types       = p.blue.emphasis,
     punctuation = '#b2b9c6',
     escape      = '#858c96'
 }
 
 p.diff = {
-    add = colors.blend(p.git.add, p.bg.dim, 0.8),
-    change = colors.blend(p.git.change, p.bg.dim, 0.9),
-    delete = colors.blend(p.git.delete, p.bg.dim, 0.8),
+    add = colors.blend(p.git.add, p.bg.muted, 0.8),
+    change = colors.blend(p.git.change, p.bg.muted, 0.9),
+    delete = colors.blend(p.git.delete, p.bg.muted, 0.8),
     text = p.ui.search
 }
 

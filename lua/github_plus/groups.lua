@@ -40,43 +40,43 @@ M.setup = function(p, opts)
     ---@type table<string, Highlight>
     return {
         -- Editor highlights
-        ColorColumn                       = { bg = p.bg.bright },
+        ColorColumn                       = { bg = p.bg.emphasis },
         Cursor                            = { fg = p.bg.base, bg = p.blue.base },
-        CursorColumn                      = { bg = p.bg.bright },
-        CursorLine                        = { bg = p.bg.bright },
+        CursorColumn                      = { bg = p.bg.emphasis },
+        CursorLine                        = { bg = p.bg.emphasis },
         CursorLineNr                      = { fg = p.fg.base },
         CurSearch                         = { link = 'IncSearch' },
         Directory                         = { fg = p.blue.base },
         ErrorMsg                          = { fg = p.diagnostics.error },
-        FloatBorder                       = { fg = p.ui.border, bg = p.bg.bright },
-        FoldColumn                        = { fg = p.fg.dim, bg = p.bg.base },
-        Folded                            = { fg = p.fg.dim, bg = p.bg.bright },
+        FloatBorder                       = { fg = p.ui.border, bg = p.bg.emphasis },
+        FoldColumn                        = { fg = p.fg.muted, bg = p.bg.base },
+        Folded                            = { fg = p.fg.muted, bg = p.bg.emphasis },
         IncSearch                         = { fg = p.bg.base, bg = p.orange.base, bold = true },
         LineNr                            = { fg = p.ui.line_nr },
-        MatchParen                        = { fg = p.cyan.bright, bg = p.ui.visual, bold = true },
+        MatchParen                        = { fg = p.cyan.emphasis, bg = p.ui.visual, bold = true },
         ModeMsg                           = { fg = p.fg.base },
         MoreMsg                           = { fg = p.blue.base },
-        NonText                           = { fg = p.fg.dim },
+        NonText                           = { fg = p.fg.muted },
         Normal                            = { fg = p.fg.base, bg = opts.transparent and 'NONE' or p.bg.base },
-        NormalFloat                       = { fg = p.fg.base, bg = p.bg.bright },
+        NormalFloat                       = { fg = p.fg.base, bg = p.bg.emphasis },
         Pmenu                             = { fg = p.fg.base, bg = p.bg.base },
-        PmenuSbar                         = { bg = p.bg.bright },
+        PmenuSbar                         = { bg = p.bg.emphasis },
         PmenuSel                          = { bg = p.ui.selection },
-        PmenuThumb                        = { bg = p.fg.dim },
+        PmenuThumb                        = { bg = p.fg.muted },
         Question                          = { fg = p.blue.base },
         Search                            = { bg = p.ui.visual, fg = p.fg.base },
         SignColumn                        = { bg = opts.transparent and 'NONE' or p.bg.base },
-        SpecialKey                        = { fg = p.fg.dim },
-        StatusLine                        = { fg = p.fg.base, bg = p.bg.bright },
-        StatusLineNC                      = { fg = p.fg.dim, bg = p.bg.bright },
-        TabLine                           = { fg = p.fg.dim, bg = p.bg.bright },
-        TabLineFill                       = { bg = p.bg.dim },
+        SpecialKey                        = { fg = p.fg.muted },
+        StatusLine                        = { fg = p.fg.base, bg = p.bg.emphasis },
+        StatusLineNC                      = { fg = p.fg.muted, bg = p.bg.emphasis },
+        TabLine                           = { fg = p.fg.muted, bg = p.bg.emphasis },
+        TabLineFill                       = { bg = p.bg.muted },
         TabLineSel                        = { fg = p.fg.base, bg = p.bg.base },
         Title                             = { fg = p.blue.base, bold = true },
         VertSplit                         = { fg = p.ui.border },
         Visual                            = { bg = p.ui.visual },
         WarningMsg                        = { fg = p.diagnostics.warn },
-        Whitespace                        = { fg = p.fg.dim },
+        Whitespace                        = { fg = p.fg.muted },
         WinSeparator                      = { fg = p.ui.border },
         Added                             = { fg = p.git.add, bg = p.diff.add, bold = true },
         Changed                           = { fg = p.git.change, bg = p.diff.change, bold = true },
@@ -84,15 +84,15 @@ M.setup = function(p, opts)
 
         -- Syntax highlighting
         Comment                           = applyStyles({ fg = p.ui.comment }, opts.styles.comments),
-        Constant                          = { fg = p.cyan.bright },
-        String                            = applyStyles({ fg = p.green.bright }, opts.styles.strings),
+        Constant                          = { fg = p.cyan.emphasis },
+        String                            = applyStyles({ fg = p.green.emphasis }, opts.styles.strings),
         Character                         = { link = 'String' },
-        Number                            = applyStyles({ fg = p.cyan.bright }, opts.styles.numbers),
+        Number                            = applyStyles({ fg = p.cyan.emphasis }, opts.styles.numbers),
         Float                             = { link = 'Number' },
-        Boolean                           = { fg = p.cyan.bright },
+        Boolean                           = { fg = p.cyan.emphasis },
 
         Identifier                        = { fg = p.fg.base },
-        Function                          = applyStyles({ fg = p.purple.bright }, opts.styles.functions),
+        Function                          = applyStyles({ fg = p.purple.emphasis }, opts.styles.functions),
 
         Statement                         = { fg = p.red.base },
         Conditional                       = applyStyles({ fg = p.red.base }, opts.styles.conditionals),
@@ -118,7 +118,7 @@ M.setup = function(p, opts)
         -- Special                       = { fg = p.red.base },
         Special                           = { fg = p.red.base },
         SpecialChar                       = { link = 'Special' },
-        Tag                               = { fg = p.green.bright },
+        Tag                               = { fg = p.green.emphasis },
         Delimiter                         = { fg = p.fg.base },
         SpecialComment                    = { link = 'Comment' }, -- special things inside comments
         Debug                             = { link = 'Special' },
@@ -129,10 +129,10 @@ M.setup = function(p, opts)
 
         Error                             = { fg = p.diagnostics.error },
         Todo                              = { fg = p.blue.base, bold = true },
-        Ignore                            = { fg = p.fg.dim },
+        Ignore                            = { fg = p.fg.muted },
 
         -- Treesitter highlights
-        ['@text.literal']                 = { fg = p.cyan.bright },
+        ['@text.literal']                 = { fg = p.cyan.emphasis },
         ['@text.reference']               = { fg = p.blue.base },
         ['@text.title']                   = { fg = p.blue.base, bold = true },
         ['@text.uri']                     = { fg = p.blue.base, underline = true },
@@ -183,7 +183,7 @@ M.setup = function(p, opts)
         ['@include']                      = { fg = p.red.base },
         ['@preproc']                      = { fg = p.red.base },
         ['@debug']                        = { fg = p.red.base },
-        ['@tag']                          = { fg = p.blue.bright },
+        ['@tag']                          = { fg = p.blue.emphasis },
         ['@tag.attribute']                = { fg = p.fg.base },
         ['@tag.delimiter']                = { fg = p.fg.base },
         ['@tag.builtin']                  = { link = 'Tag' },
@@ -202,7 +202,7 @@ M.setup = function(p, opts)
 
         ['@markup.quote.markdown']        = { fg = p.fg.base },
         ['@markup.raw.block']             = { fg = p.fg.base },
-        ['@markup.raw.markdown_inline']   = { fg = p.green.bright },
+        ['@markup.raw.markdown_inline']   = { fg = p.green.emphasis },
 
         -- LSP highlights
         DiagnosticError                   = { fg = p.diagnostics.error },
@@ -253,7 +253,7 @@ M.setup = function(p, opts)
         WhichKeyGroup                     = { fg = p.blue.base },
         WhichKeyDesc                      = { fg = p.fg.base },
         WhichKeySeparator                 = { fg = p.ui.comment },
-        WhichKeyFloat                     = { bg = p.bg.bright },
+        WhichKeyFloat                     = { bg = p.bg.emphasis },
 
         -- Notify
         NotifyERRORBorder                 = { fg = p.diagnostics.error },
@@ -275,7 +275,7 @@ M.setup = function(p, opts)
         -- Leap
         LeapMatch                         = { fg = p.bg.base, bg = p.purple.base, bold = true },
         LeapLabelPrimary                  = { fg = p.bg.base, bg = p.pink.base, bold = true },
-        LeapLabelSecondary                = { fg = p.bg.base, bg = p.cyan.bright, bold = true },
+        LeapLabelSecondary                = { fg = p.bg.base, bg = p.cyan.emphasis, bold = true },
         LeapBackdrop                      = { fg = p.ui.comment },
 
         -- Blink.cmp
@@ -283,19 +283,19 @@ M.setup = function(p, opts)
         BlinkCmpMenuBorder                = { link = 'FloatBorder' },
         BlinkCmpMenuSelection             = { link = 'PmenuSel' },
 
-        BlinkCmpDoc                       = { fg = p.fg.base, bg = p.bg.bright },
+        BlinkCmpDoc                       = { fg = p.fg.base, bg = p.bg.emphasis },
         BlinkCmpDocBorder                 = { link = 'FloatBorder' },
         BlinkCmpDocSeparator              = { link = 'FloatBorder' },
 
         BlinkCmpSource                    = { link = 'Comment' },
 
         BlinkCmpLabel                     = { fg = p.fg.base },
-        BlinkCmpLabelDeprecated           = { fg = p.fg.dim, strikethrough = true },
+        BlinkCmpLabelDeprecated           = { fg = p.fg.muted, strikethrough = true },
         BlinkCmpLabelMatch                = { bold = true },
         BlinkCmpLabelDetail               = { fg = p.ui.comment },
         BlinkCmpLabelDescription          = { link = 'BlinkCmpLabelDetail' },
 
-        BlinkCmpKind                      = { fg = p.fg.dim, },
+        BlinkCmpKind                      = { fg = p.fg.muted, },
         BlinkCmpKindKeyword               = { link = 'Keyword' },
         BlinkCmpKindVariable              = { link = '@variable' },
         BlinkCmpKindConstant              = { link = '@constant' },
@@ -317,16 +317,16 @@ M.setup = function(p, opts)
         BlinkCmpKindTypeParameter         = { link = '@variable.member' },
         BlinkCmpKindEnumMember            = { link = '@variable.member' },
         BlinkCmpKindOperator              = { link = 'Operator' },
-        BlinkCmpKindSnippet               = { fg = p.fg.dim },
+        BlinkCmpKindSnippet               = { fg = p.fg.muted },
 
         -- nvim-cmp
         CmpItemAbbr                       = { fg = p.fg.base },
-        CmpItemAbbrDeprecated             = { fg = p.fg.dim, strikethrough = true },
+        CmpItemAbbrDeprecated             = { fg = p.fg.muted, strikethrough = true },
         CmpItemAbbrMatch                  = { bold = true },
         CmpItemAbbrMatchFuzzy             = { bold = true },
         CmpItemMenu                       = { link = 'Comment' },
 
-        CmpItemKind                       = { fg = p.fg.dim },
+        CmpItemKind                       = { fg = p.fg.muted },
         CmpItemKindKeyword                = { link = 'Keyword' },
         CmpItemKindVariable               = { link = '@variable' },
         CmpItemKindConstant               = { link = '@constant' },
@@ -348,7 +348,7 @@ M.setup = function(p, opts)
         CmpItemKindTypeParameter          = { link = '@variable.member' },
         CmpItemKindEnumMember             = { link = '@variable.member' },
         CmpItemKindOperator               = { link = 'Operator' },
-        CmpItemKindSnippet                = { fg = p.fg.dim },
+        CmpItemKindSnippet                = { fg = p.fg.muted },
 
         -- Snacks nvim
         SnacksPicker                      = { link = 'Normal' },
