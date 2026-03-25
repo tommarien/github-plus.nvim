@@ -42,8 +42,8 @@ M.setup = function(p, opts)
         -- Editor highlights
         ColorColumn                       = { bg = p.bg.emphasis },
         Cursor                            = { fg = p.bg.base, bg = p.blue.base },
-        CursorColumn                      = { bg = p.bg.emphasis },
-        CursorLine                        = { bg = p.bg.emphasis },
+        CursorColumn                      = { bg = p.ui.cursorline },
+        CursorLine                        = { bg = p.ui.cursorline },
         CursorLineNr                      = { fg = p.fg.base },
         CurSearch                         = { link = 'IncSearch' },
         Directory                         = { fg = p.blue.base },
@@ -162,7 +162,7 @@ M.setup = function(p, opts)
         ['@parameter']                    = { fg = p.fg.base },
         ['@method']                       = { link = 'Function' },
         ['@field']                        = { fg = p.fg.base },
-        ['@property']                     = { fg = semantic and p.cyan.base or p.fg.base },
+        ['@property']                     = { fg = semantic and p.syntax.property or p.fg.base },
         ['@constructor']                  = { link = 'Function' },
         ['@conditional']                  = { link = 'Conditional' },
         ['@repeat']                       = { fg = p.red.base },
@@ -174,7 +174,7 @@ M.setup = function(p, opts)
         ['@exception']                    = { fg = p.red.base },
         ['@variable']                     = { fg = p.fg.base },
         ['@variable.builtin']             = { fg = p.red.base },
-        ['@variable.member']              = { fg = semantic and p.cyan.base or p.fg.base },
+        ['@variable.member']              = { fg = semantic and p.syntax.property or p.fg.base },
         ['@type']                         = { link = 'Type' },
         ['@type.definition']              = { link = 'Typedef' },
         ['@type.builtin']                 = { link = 'Type' },
@@ -194,10 +194,10 @@ M.setup = function(p, opts)
         ['@markup.strikethrough']         = { strikethrough = true },
         ['@markup.underline']             = { underline = true },
 
-        ['@markup.heading']               = { fg = p.cyan.base },
+        ['@markup.heading']               = { fg = p.syntax.markup },
 
-        ['@markup.link']                  = { fg = p.cyan.base },
-        ['@markup.link.label']            = { fg = p.cyan.base },
+        ['@markup.link']                  = { fg = p.syntax.markup },
+        ['@markup.link.label']            = { fg = p.syntax.markup },
         ['@markup.link.url']              = { fg = p.blue.base },
 
         ['@markup.quote.markdown']        = { fg = p.fg.base },
