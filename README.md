@@ -7,6 +7,7 @@ A lua port of the nikso theme for [VSCode](https://github.com/thenikso/nikso-vsc
 <div align="center">
   <h3>Lua</h3><img src="https://github.com/tommarien/github-plus.nvim/blob/main/assets/lua.png" alt="lua" style="border-radius:1%" />
   <h3>Go</h3><img src="https://github.com/tommarien/github-plus.nvim/blob/main/assets/go.png" alt="go" style="border-radius:1%" />
+  <h3>Go (Light)</h3><img src="https://github.com/tommarien/github-plus.nvim/blob/main/assets/go-light.png" alt="go" style="border-radius:1%" />
   <h3>TypeScript</h3><img src="https://github.com/tommarien/github-plus.nvim/blob/main/assets/typescript.png" alt="ts" style="border-radius:1%" />
 </div>
 
