@@ -43,7 +43,6 @@ local colors = require('github_plus.utils.colors')
 --- @field purple GithubPlus.Palette.EmphasisColor
 --- @field cyan GithubPlus.Palette.EmphasisColor
 --- @field white GithubPlus.Palette.EmphasisColor
---- @field pink GithubPlus.Palette.EmphasisColor
 --- @field none string
 --- @field diagnostics { hint: string, info: string, warn:string, error: string }
 --- @field git { add:string, change:string, delete:string }
@@ -68,7 +67,6 @@ M.get = function(bg)
             purple = { base = '#b377cf', emphasis = '#dcbdfb' },
             cyan   = { base = '#96d0ff', emphasis = '#a5d6ff' },
             white  = { base = '#d1d7e0', emphasis = '#fbffff' },
-            pink   = { base = '#e275ad', emphasis = '#ffb3d8' },
             none   = 'NONE',
         }
 
@@ -131,7 +129,6 @@ M.get = function(bg)
         purple = { base = '#6f42c1', emphasis = '#6f42c1' },
         cyan   = { base = '#0ac7d7', emphasis = '#005cc5' },
         white  = { base = '#bfbfbf', emphasis = '#e0e0e0' },
-        pink   = { base = '#e275ad', emphasis = '#ffb3d8' },
         none   = 'NONE',
     }
 

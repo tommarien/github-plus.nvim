@@ -274,7 +274,7 @@ M.setup = function(p, opts)
 
         -- Leap
         LeapMatch                         = { fg = p.bg.base, bg = p.purple.base, bold = true },
-        LeapLabelPrimary                  = { fg = p.bg.base, bg = p.pink.base, bold = true },
+        LeapLabelPrimary                  = { fg = p.bg.base, bg = p.orange.base, bold = true },
         LeapLabelSecondary                = { fg = p.bg.base, bg = p.cyan.emphasis, bold = true },
         LeapBackdrop                      = { fg = p.ui.comment },
 
