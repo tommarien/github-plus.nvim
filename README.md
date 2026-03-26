@@ -62,6 +62,15 @@ You can customize the plugin using the available options below:
   - `conditionals` (table): Options for styling conditionals.
   - `functions` (table): Options for styling functions.
 
+### Light theme
+
+The theme supports both dark and light variants, controlled via `vim.o.background`. Set it before applying the colorscheme:
+
+```lua
+vim.o.background = 'light' -- or 'dark' (default)
+vim.cmd('colorscheme github_plus')
+```
+
 ### Usage
 
 Simply set the colorscheme with the builtin command `:colorscheme`
