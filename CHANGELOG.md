@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.5.0](https://github.com/tommarien/github-plus.nvim/compare/v1.4.0...v1.5.0) (2026-03-26)
+
+
+### Features
+
+* **config:** allow transparent to be set per background ([cb89710](https://github.com/tommarien/github-plus.nvim/commit/cb89710e989113dfabceca5e0b0905f7f5d34805))
+* **extras:** add light theme for kitty and ghostty, standardize filenames to underscores ([567baee](https://github.com/tommarien/github-plus.nvim/commit/567baee8a6378696b0ac39459f62c8289cc2eed8))
+* **light:** add light theme variant with background reconciliation ([af7caba](https://github.com/tommarien/github-plus.nvim/commit/af7cabab54062cffe0cb1406b9e60ea9a485ea5f))
+
+
+### Bug Fixes
+
+* **groups:** align parens ([db55f0e](https://github.com/tommarien/github-plus.nvim/commit/db55f0e4a81ec6981c361c594041c18080122358))
+
 ## [1.4.0](https://github.com/tommarien/github-plus.nvim/compare/v1.3.3...v1.4.0) (2026-03-21)
 
 
