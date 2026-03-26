@@ -53,7 +53,7 @@ M.setup = function(p, opts)
         Folded                            = { fg = p.fg.muted, bg = p.bg.emphasis },
         IncSearch                         = { fg = p.bg.base, bg = p.orange.base, bold = true },
         LineNr                            = { fg = p.ui.line_nr },
-        MatchParen                        = { fg = p.cyan.emphasis, bg = p.ui.visual, bold = true },
+        MatchParen                        = { fg = p.fg.base, bg = p.ui.visual },
         ModeMsg                           = { fg = p.fg.base },
         MoreMsg                           = { fg = p.blue.base },
         NonText                           = { fg = p.fg.muted },
