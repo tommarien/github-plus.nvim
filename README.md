@@ -49,7 +49,7 @@ The plugin provides the following default settings:
 
 You can customize the plugin using the available options below:
 
-- **`transparent`** (boolean): Enable transparent background.
+- **`transparent`** (boolean | table): Enable transparent background. Accepts a boolean or a per-background table `{ dark = true, light = false }`.
 - **`terminal_colors`** (boolean): Apply colors to the terminal.
 - **`semantic`** (boolean): Enable more semantic highlighting.
 - **`styles`** (table): Customize syntax highlighting styles. This table supports the following keys:

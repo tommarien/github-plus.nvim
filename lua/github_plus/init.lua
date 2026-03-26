@@ -2,6 +2,13 @@ local config = require('github_plus.config')
 local palette = require('github_plus.palette')
 local M = {}
 
+local function resolve_transparent(transparent, bg)
+    if type(transparent) == 'table' then
+        return transparent[bg] == true
+    end
+    return transparent == true
+end
+
 M.setup = config.setup
 
 M.load = function()
@@ -13,7 +20,10 @@ M.load = function()
     end
 
     local p = palette.get(bg)
-    local groups = require('github_plus.groups').setup(p, config.opts)
+    local opts = vim.tbl_extend('force', config.opts, {
+        transparent = resolve_transparent(config.opts.transparent, bg)
+    })
+    local groups = require('github_plus.groups').setup(p, opts)
     for group, setting in pairs(groups) do
         vim.api.nvim_set_hl(0, group, setting)
     end

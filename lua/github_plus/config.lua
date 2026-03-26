@@ -13,9 +13,11 @@ local M = {}
 --- @field conditionals? GithubPlus.Style
 --- @field functions? GithubPlus.Style
 
+--- @alias GithubPlus.Transparent boolean | { dark?: boolean, light?: boolean }
+
 --- @class GithubPlus.Options
 --- @field terminal_colors boolean
---- @field transparent boolean
+--- @field transparent GithubPlus.Transparent
 --- @field semantic boolean
 --- @field styles GithubPlus.Styles
 local defaults = {
@@ -41,7 +43,7 @@ M.deep_extend = function(...)
 end
 
 --- @class GithubPlus.Overrides
---- @field transparent? boolean Enable transparent background
+--- @field transparent? GithubPlus.Transparent Enable transparent background
 --- @field terminal_colors? boolean Apply colors to terminal
 --- @field semantic? boolean More semantic highlighting
 --- @field styles? GithubPlus.Styles
