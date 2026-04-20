@@ -62,7 +62,7 @@ M.get = function(bg)
             red    = { base = '#f47067', emphasis = '#ff938a' },
             green  = { base = '#57ab5a', emphasis = '#8edb8c' },
             yellow = { base = '#daaa3f', emphasis = '#f2cc60' },
-            orange = { base = '#f69d50', emphasis = '#ffb86b' },
+            orange = { base = '#f69d50', emphasis = '#ffa657' },
             blue   = { base = '#539bf5', emphasis = '#79c0ff' },
             purple = { base = '#b377cf', emphasis = '#dcbdfb' },
             cyan   = { base = '#96d0ff', emphasis = '#a5d6ff' },
@@ -99,7 +99,7 @@ M.get = function(bg)
         }
 
         p.syntax      = {
-            types       = p.purple.base,
+            types       = p.orange.emphasis,
             punctuation = '#b2b9c6',
             escape      = '#858c96',
             property    = p.cyan.base,
@@ -124,7 +124,7 @@ M.get = function(bg)
         red    = { base = '#d73949', emphasis = '#fa6e71' },
         green  = { base = '#90d159', emphasis = '#22863a' },
         yellow = { base = '#f7c400', emphasis = '#ffca39' },
-        orange = { base = '#e36209', emphasis = '#f69d50' },
+        orange = { base = '#953800', emphasis = '#f69d50' },
         blue   = { base = '#005bc5', emphasis = '#1b22d6' },
         purple = { base = '#6f42c1', emphasis = '#6f42c1' },
         cyan   = { base = '#0ac7d7', emphasis = '#005cc5' },
@@ -161,7 +161,7 @@ M.get = function(bg)
     }
 
     p.syntax      = {
-        types       = p.purple.base,
+        types       = p.orange.base,
         punctuation = p.fg.base,
         escape      = '#032f62',
         property    = p.blue.base,
