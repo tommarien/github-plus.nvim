@@ -109,8 +109,7 @@ M.setup = function(p, opts)
         Macro                             = { link = 'PreProc' },
         PreCondit                         = { link = 'PreProc' },
 
-        Type                              = applyStyles({ fg = semantic and p.purple.base or p.syntax.types },
-            opts.styles.types),
+        Type                              = applyStyles({ fg = p.syntax.types }, opts.styles.types),
         Typedef                           = { link = 'Type' },
         Structure                         = { link = 'Type' },
         StorageClass                      = { link = 'Type' }, -- static, register

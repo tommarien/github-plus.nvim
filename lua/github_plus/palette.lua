@@ -99,7 +99,7 @@ M.get = function(bg)
         }
 
         p.syntax      = {
-            types       = p.blue.emphasis,
+            types       = p.purple.base,
             punctuation = '#b2b9c6',
             escape      = '#858c96',
             property    = p.cyan.base,
