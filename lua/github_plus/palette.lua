@@ -62,7 +62,7 @@ M.get = function(bg)
             red    = { base = '#f47067', emphasis = '#ff938a' },
             green  = { base = '#57ab5a', emphasis = '#8edb8c' },
             yellow = { base = '#daaa3f', emphasis = '#f2cc60' },
-            orange = { base = '#f69d50', emphasis = '#ffa657' },
+            orange = { base = '#f69d50', emphasis = '#ffb86b' },
             blue   = { base = '#539bf5', emphasis = '#79c0ff' },
             purple = { base = '#b377cf', emphasis = '#dcbdfb' },
             cyan   = { base = '#96d0ff', emphasis = '#a5d6ff' },
@@ -99,7 +99,7 @@ M.get = function(bg)
         }
 
         p.syntax      = {
-            types       = p.orange.emphasis,
+            types       = p.orange.base,
             punctuation = '#b2b9c6',
             escape      = '#858c96',
             property    = p.cyan.base,
