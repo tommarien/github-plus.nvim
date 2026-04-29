@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.6.0](https://github.com/tommarien/github-plus.nvim/compare/v1.5.0...v1.6.0) (2026-04-29)
+
+
+### Features
+
+* **groups:** added sidekick chat group ([595147c](https://github.com/tommarien/github-plus.nvim/commit/595147cd1362b7392d2266a584199e417644d48c))
+
+
+### Bug Fixes
+
+* **groups:** make floats darker ([65fff74](https://github.com/tommarien/github-plus.nvim/commit/65fff74f7ed3fcf65b90e0803cc1292cc1cc3a35))
+* **palette:** adjust type color closer to github theme ([34fc1af](https://github.com/tommarien/github-plus.nvim/commit/34fc1af1f8cd0a7a7e63d67122a6a13a18270fc0))
+* **palette:** adjust type color to github theme, previous was too bright ([d65e169](https://github.com/tommarien/github-plus.nvim/commit/d65e16933bf7e88fe15fbfcc843ca35d8a56e3e2))
+* **syntax:** use purple for types in dark palette ([c2dc77a](https://github.com/tommarien/github-plus.nvim/commit/c2dc77a66e7767c27db85c7ba6afb1e83a002083))
+
 ## [1.5.0](https://github.com/tommarien/github-plus.nvim/compare/v1.4.0...v1.5.0) (2026-03-26)
 
 
