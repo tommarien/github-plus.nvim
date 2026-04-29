@@ -363,7 +363,10 @@ M.setup = function(p, opts)
         TreesitterContextBottom           = { sp = p.ui.visual, underline = true },
 
         -- Oil
-        OilHidden                         = { fg = p.ui.comment }
+        OilHidden                         = { fg = p.ui.comment },
+
+        -- SideKick
+        SideKickChat                      = { link = 'Normal' }
     }
 end
 
