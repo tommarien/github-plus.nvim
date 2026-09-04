@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.0](https://github.com/tommarien/github-plus.nvim/compare/v1.6.0...v1.7.0) (2026-09-04)
+
+
+### Features
+
+* **styles:** allow fg color override in style options ([d7c1ea8](https://github.com/tommarien/github-plus.nvim/commit/d7c1ea85eb3dcd14bcb81fa4fcd162ea9fc7b511))
+
 ## [1.6.0](https://github.com/tommarien/github-plus.nvim/compare/v1.5.0...v1.6.0) (2026-04-29)
 
 
