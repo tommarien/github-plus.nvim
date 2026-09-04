@@ -2,7 +2,7 @@
 --- @field opts GithubPlus.Options
 local M = {}
 
---- @alias GithubPlus.Style { bold?: boolean, italic?: boolean, underline?: boolean }
+--- @alias GithubPlus.Style { fg?: string, bold?: boolean, italic?: boolean, underline?: boolean }
 --- @class GithubPlus.Styles
 --- @field comments? GithubPlus.Style
 --- @field keywords? GithubPlus.Style

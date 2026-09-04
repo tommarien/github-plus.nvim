@@ -8,6 +8,9 @@ local applyStyles = function(highlight, styles)
         return highlight
     end
 
+    if styles.fg then
+        highlight.fg = styles.fg
+    end
     if styles.bold then
         highlight.bold = true
     end
