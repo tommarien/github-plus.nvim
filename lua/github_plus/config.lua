@@ -10,6 +10,7 @@ local M = {}
 --- @field operators? GithubPlus.Style
 --- @field strings? GithubPlus.Style
 --- @field types? GithubPlus.Style
+--- @field builtin_types? GithubPlus.Style
 --- @field conditionals? GithubPlus.Style
 --- @field functions? GithubPlus.Style
 

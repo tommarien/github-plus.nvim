@@ -60,6 +60,7 @@ You can customize the plugin using the available options below:
   - `operators` (table): Options for styling operators.
   - `strings` (table): Options for styling strings.
   - `types` (table): Options for styling types.
+  - `builtin_types` (table): Options for styling builtin types (e.g., `string`, `number`).
   - `conditionals` (table): Options for styling conditionals.
   - `functions` (table): Options for styling functions.
 

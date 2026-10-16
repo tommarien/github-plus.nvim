@@ -27,6 +27,7 @@ local colors = require('github_plus.utils.colors')
 --- @class GithubPlus.Palette.Syntax
 --- @field punctuation string
 --- @field types string
+--- @field builtin_types string
 --- @field escape string
 --- @field property string
 --- @field markup string
@@ -99,11 +100,12 @@ M.get = function(bg)
         }
 
         p.syntax      = {
-            types       = p.orange.base,
-            punctuation = '#b2b9c6',
-            escape      = '#858c96',
-            property    = p.cyan.base,
-            markup      = p.cyan.base,
+            types         = p.orange.base,
+            builtin_types = '#6cabe8',
+            punctuation   = '#b2b9c6',
+            escape        = '#858c96',
+            property      = p.cyan.base,
+            markup        = p.cyan.base,
         }
 
         p.diff        = {
@@ -161,11 +163,12 @@ M.get = function(bg)
     }
 
     p.syntax      = {
-        types       = p.orange.base,
-        punctuation = p.fg.base,
-        escape      = '#032f62',
-        property    = p.blue.base,
-        markup      = p.blue.base,
+        types         = p.orange.base,
+        builtin_types = '#0969da',
+        punctuation   = p.fg.base,
+        escape        = '#032f62',
+        property      = p.blue.base,
+        markup        = p.blue.base,
     }
 
     p.diff        = {
