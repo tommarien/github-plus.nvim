@@ -101,7 +101,7 @@ M.get = function(bg)
 
         p.syntax      = {
             types         = p.orange.base,
-            builtin_types = '#6cabe8',
+            builtin_types = colors.blend(p.blue.base, p.blue.emphasis, 0.5),
             punctuation   = '#b2b9c6',
             escape        = '#858c96',
             property      = p.cyan.base,
@@ -164,7 +164,7 @@ M.get = function(bg)
 
     p.syntax      = {
         types         = p.orange.base,
-        builtin_types = '#0969da',
+        builtin_types = colors.blend(p.blue.base, p.blue.emphasis, 0.5),
         punctuation   = p.fg.base,
         escape        = '#032f62',
         property      = p.blue.base,
