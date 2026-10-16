@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.8.0](https://github.com/tommarien/github-plus.nvim/compare/v1.7.0...v1.8.0) (2026-10-16)
+
+
+### Features
+
+* **groups:** distinguish builtin types from types ([e7f762e](https://github.com/tommarien/github-plus.nvim/commit/e7f762e18cef42b2f134ddf4e26b99e94638e354))
+
+
+### Bug Fixes
+
+* **palette:** fix builtin type color ([f252971](https://github.com/tommarien/github-plus.nvim/commit/f252971d067a7ce0bfd8ba2e37d3fdf682690b7f))
+
 ## [1.7.0](https://github.com/tommarien/github-plus.nvim/compare/v1.6.0...v1.7.0) (2026-10-13)
 
 
