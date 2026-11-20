@@ -249,7 +249,7 @@ M.setup = function(p, opts)
         TelescopeResultsBorder               = { fg = p.ui.border },
         TelescopePreviewBorder               = { fg = p.ui.border },
         TelescopeSelection                   = { link = 'PmenuSel' },
-        TelescopeMatching                    = { fg = p.blue.base, bold = true },
+        TelescopeMatching                    = { fg = p.blue.emphasis, bold = true },
         TelescopeMultiSelection              = { bg = p.ui.selection },
 
         -- Which-key
@@ -357,7 +357,7 @@ M.setup = function(p, opts)
         -- Snacks nvim
         SnacksPicker                         = { link = 'Normal' },
         SnacksPickerBorder                   = { fg = p.ui.border },
-        SnacksPickerMatch                    = { bg = p.orange.base, bold = true },
+        SnacksPickerMatch                    = { fg = p.blue.emphasis, bold = true },
         SnacksPickerDir                      = { fg = p.none, bg = p.none, nocombine = true },
         SnacksPickerDirectory                = { fg = p.none, bg = p.none, nocombine = true },
         SnacksIndent                         = { fg = p.ui.indent, bg = p.none, nocombine = true },
