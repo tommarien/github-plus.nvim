@@ -181,6 +181,7 @@ M.setup = function(p, opts)
         ['@type.definition']                 = { link = 'Typedef' },
         ['@type.builtin']                    = applyStyles({ fg = p.syntax.builtin_types }, opts.styles.builtin_types),
         ['@lsp.typemod.type.defaultLibrary'] = { link = '@type.builtin' },
+        ['@lsp.type.namespace.go']           = {},
         ['@storageclass']                    = { fg = p.red.base },
         ['@namespace']                       = { fg = p.fg.base },
         ['@include']                         = { fg = p.red.base },
