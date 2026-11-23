@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.8.0](https://github.com/tommarien/github-plus.nvim/compare/v1.7.0...v1.8.0) (2026-11-20)
+
+
+### Features
+
+* **groups:** distinguish builtin types from types ([e7f762e](https://github.com/tommarien/github-plus.nvim/commit/e7f762e18cef42b2f134ddf4e26b99e94638e354))
+
+
+### Bug Fixes
+
+* **groups:** align go namespace highlights with treesitter ([80c6df4](https://github.com/tommarien/github-plus.nvim/commit/80c6df4e965c39a2df5bb122ea12c0a10a1e58ce))
+* **groups:** align SnacksPickerMatch more with fff ([ef9ba31](https://github.com/tommarien/github-plus.nvim/commit/ef9ba31ebbd813f93d45b2bbbde17de5dc52a65c))
+* **groups:** use light blue bold for picker matches ([35f58ac](https://github.com/tommarien/github-plus.nvim/commit/35f58acaabc0d1d874669efe938c34b601af5d37))
+* **palette:** fix builtin type color ([f252971](https://github.com/tommarien/github-plus.nvim/commit/f252971d067a7ce0bfd8ba2e37d3fdf682690b7f))
+
 ## [1.7.0](https://github.com/tommarien/github-plus.nvim/compare/v1.6.0...v1.7.0) (2026-10-13)
 
 
